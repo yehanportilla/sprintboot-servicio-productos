@@ -8,7 +8,6 @@ public class SprintbootServicioProductosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SprintbootServicioProductosApplication.class, args);
-		// Inicio aplicacion
 	}
 
 }
