@@ -31,13 +31,24 @@ public class ProductoServiceImpl implements IProductoService {
 	}
 
 	/**
-	 * method of searching for product by id
+	 * Method of searching for product by id
 	 */
 	@Override
 	@Transactional(readOnly = true)
 	public Producto finById(Long id) {
 
 		return productoDao.findById(id).orElse(null);
+	}
+	
+	
+    /**
+     * Method save product
+     */
+	@Override
+	@Transactional(readOnly = true)
+	public Producto saveProduct(Producto producto) {
+
+		return productoDao.save(producto);
 	}
 
 }

@@ -15,4 +15,6 @@ public interface IProductoService {
 	
 	public Producto finById(Long id);
 	
+	public Producto saveProduct(Producto producto);
+	
 }
