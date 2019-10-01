@@ -39,24 +39,22 @@
 			"id": "b447177b-03f0-b538-1798-21776eb80447",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8002/api/detalle/2/cantidad/3",
+			"url": "http://localhost:8002/api/detalle/2/cantidad/4",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "a1643dc5-b0d7-ce7a-b6f7-b2186320a9c3",
 			"data": null,
 			"dataMode": "params",
-			"name": "http://localhost:8002/api/detalle/2/cantidad/3",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1568690375301,
-			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1569899936049,
+			"name": "http://localhost:8002/api/detalle/2/cantidad/3",
+			"description": "",
+			"collectionId": "a1643dc5-b0d7-ce7a-b6f7-b2186320a9c3",
+			"responses": []
 		}
 	]
 }

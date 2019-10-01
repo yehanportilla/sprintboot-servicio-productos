@@ -65,19 +65,24 @@
 		},
 		{
 			"id": "effeb110-f1e6-9656-f844-5356c181acf7",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:63110/api/listarProductos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1569900044665,
 			"name": "http://localhost:8001/api/listarProductos",
 			"description": "",
 			"collectionId": "ff05d5e8-0f1c-3981-0c42-d919dad73db8",
-			"method": "GET",
-			"headers": "",
-			"data": [],
-			"rawModeData": "",
-			"url": "http://localhost:8001/api/listarProductos",
-			"responses": [],
-			"pathVariableData": [],
-			"queryParams": [],
-			"headerData": [],
-			"collection_id": "ff05d5e8-0f1c-3981-0c42-d919dad73db8"
+			"responses": []
 		}
 	]
 }
