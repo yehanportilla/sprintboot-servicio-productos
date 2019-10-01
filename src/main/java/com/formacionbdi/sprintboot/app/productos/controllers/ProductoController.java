@@ -29,7 +29,7 @@ public class ProductoController {
 
 	@Autowired
 	private Environment env;
-	
+
 	@Value("${server.port}")
 	private Integer port;
 
@@ -43,11 +43,9 @@ public class ProductoController {
 	 */
 	@GetMapping("/listarProductos")
 	public List<Producto> listar() {
-		
-		return iProductoService.findAll()
-			.stream().map(producto -> {
-				//producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
-				producto.setPort(port);
+
+		return iProductoService.findAll().stream().map(producto -> {
+			producto.setPort(port);
 			return producto;
 
 		}).collect(Collectors.toList());
@@ -58,12 +56,19 @@ public class ProductoController {
 	 * 
 	 * @param id
 	 * @return iProductoService.finById(id)
+	 * @throws Exception
 	 */
 	@GetMapping("/buscarProducto/{id}")
-	public Producto buscarPoridProducto(@PathVariable Long id) {
+	public Producto buscarPoridProducto(@PathVariable Long id) throws Exception {
 		Producto producto = iProductoService.finById(id);
-		//producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
 		producto.setPort(port);
+
+		/*
+		boolean ok = false;
+		if (ok == false) {
+			throw new Exception("No se puede cargar el producto");
+		}
+        */
 		return producto;
 	}
 
