@@ -24,7 +24,6 @@ import com.formacionbdi.sprintboot.app.productos.models.service.IProductoService
  *
  */
 @RestController
-@RequestMapping("/api")
 public class ProductoController {
 
 	@Autowired
@@ -62,15 +61,6 @@ public class ProductoController {
 	public Producto buscarPoridProducto(@PathVariable Long id) {
 		Producto producto = iProductoService.finById(id);
 		producto.setPort(port);
-
-		/*
-	    try {
-			Thread.sleep(2000L);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    */
 		return producto;
 	}
 
