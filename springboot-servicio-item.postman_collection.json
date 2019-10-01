@@ -1,60 +1,55 @@
 {
-	"id": "a1643dc5-b0d7-ce7a-b6f7-b2186320a9c3",
-	"name": "springboot-servicio-item",
-	"description": "",
-	"order": [
-		"3b63bc23-9105-f01f-0afe-6df0dd654847",
-		"b447177b-03f0-b538-1798-21776eb80447"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1568689920215,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"info": {
+		"_postman_id": "2b8beb50-3a94-474e-aeb2-ccf745f012f7",
+		"name": "springboot-servicio-item",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "3b63bc23-9105-f01f-0afe-6df0dd654847",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:8002/api/listaItems",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "a1643dc5-b0d7-ce7a-b6f7-b2186320a9c3",
-			"data": null,
-			"dataMode": "params",
-			"name": "http://localhost:8002/api/listaItems",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1568689926600,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"name": "lista items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/items/listaItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"items",
+						"listaItems"
+					]
+				}
+			},
+			"response": []
 		},
 		{
-			"id": "b447177b-03f0-b538-1798-21776eb80447",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:8002/api/detalle/2/cantidad/4",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1569899936049,
-			"name": "http://localhost:8002/api/detalle/2/cantidad/3",
-			"description": "",
-			"collectionId": "a1643dc5-b0d7-ce7a-b6f7-b2186320a9c3",
-			"responses": []
+			"name": "lista items cantidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/items/detalle/2/cantidad/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"items",
+						"detalle",
+						"2",
+						"cantidad",
+						"3"
+					]
+				}
+			},
+			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }

@@ -1,88 +1,83 @@
 {
-	"id": "ff05d5e8-0f1c-3981-0c42-d919dad73db8",
-	"name": "sprintboot-servicio-productos",
-	"description": "",
-	"order": [
-		"effeb110-f1e6-9656-f844-5356c181acf7",
-		"911e8168-1b32-3aa3-ab82-e917969d378c",
-		"28cd94da-47e0-31cd-49f3-4cd0bfc2356b"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 0,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"info": {
+		"_postman_id": "59390bf8-9a2a-4c46-99c5-d4ef0e672604",
+		"name": "sprintboot-servicio-productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "28cd94da-47e0-31cd-49f3-4cd0bfc2356b",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:8001/api/buscarProducto/3",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1569104674195,
-			"name": "http://localhost:8001/api/buscarProducto/1",
-			"description": "",
-			"collectionId": "ff05d5e8-0f1c-3981-0c42-d919dad73db8",
-			"responses": []
-		},
-		{
-			"id": "911e8168-1b32-3aa3-ab82-e917969d378c",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+			"name": "lista productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/productos/listarProductos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"listarProductos"
+					]
 				}
-			],
-			"url": "http://localhost:8001/api/guardarProductos",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1568506199371,
-			"name": "http://localhost:8001/api/guardarProductos",
-			"description": "",
-			"collectionId": "ff05d5e8-0f1c-3981-0c42-d919dad73db8",
-			"responses": [],
-			"rawModeData": "{\n    \"nombre\": \"Lenovo\",\n    \"precio\": 2000,\n    \"createAt\": \"2019-09-14\"\n}"
+			},
+			"response": []
 		},
 		{
-			"id": "effeb110-f1e6-9656-f844-5356c181acf7",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:63110/api/listarProductos",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1569900044665,
-			"name": "http://localhost:8001/api/listarProductos",
-			"description": "",
-			"collectionId": "ff05d5e8-0f1c-3981-0c42-d919dad73db8",
-			"responses": []
+			"name": "guarda producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Lenovo\",\n    \"precio\": 2000,\n    \"createAt\": \"2019-09-14\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/productos/guardarProductos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"guardarProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar producto por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/productos/buscarProducto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"buscarProducto",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
