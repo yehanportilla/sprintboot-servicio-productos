@@ -59,16 +59,18 @@ public class ProductoController {
 	 * @throws Exception
 	 */
 	@GetMapping("/buscarProducto/{id}")
-	public Producto buscarPoridProducto(@PathVariable Long id) throws Exception {
+	public Producto buscarPoridProducto(@PathVariable Long id) {
 		Producto producto = iProductoService.finById(id);
 		producto.setPort(port);
 
 		/*
-		boolean ok = false;
-		if (ok == false) {
-			throw new Exception("No se puede cargar el producto");
+	    try {
+			Thread.sleep(2000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-        */
+	    */
 		return producto;
 	}
 
