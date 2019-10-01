@@ -61,6 +61,13 @@ public class ProductoController {
 	public Producto buscarPoridProducto(@PathVariable Long id) {
 		Producto producto = iProductoService.finById(id);
 		producto.setPort(port);
+		/*
+		try {
+			Thread.sleep(2000L);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		*/
 		return producto;
 	}
 
