@@ -111,7 +111,7 @@ public class ProductoController {
 	 * 
 	 * @param id
 	 */
-	@DeleteMapping("/EliminaProducto/{id}")
+	@DeleteMapping("/eliminaProducto/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void eliminarProducto(@PathVariable Long id) {
 		iProductoService.deleteById(id);
